@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Pomodoro App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <nav class="logo">Pomodoro</nav>
+
+  <!--timing buttons-->
+  <div class="timing-buttons">
+    <button onclick="chooseTime(10)" class="btn-five">10:00</button> 
+    <button onclick="chooseTime(15)" class="btn-ten">15:00</button>
+    <button onclick="chooseTime(25)" class="btn-fifteen">25:00</button>
+  </div>
+
+  <!--circle-->
+    <div class="circle">
+      <div class="content">
+        <div class="app-counter-box">
+          <h1 class="time"><span class="minutes">25</span>:<span class="seconds">00</span></h1>
+        </div>
+      </div>
+    </div>
+
+  <!--action buttons-->
+  <div class="action-buttons">
+    <button onclick="startApp()" class="btn-start">START</button> 
+    <button onclick="pauseApp()" class="btn-pause">PAUSE</button>
+    <button onclick="resetApp()" class="btn-reset">RESET</button>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
