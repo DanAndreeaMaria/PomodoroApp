@@ -74,17 +74,23 @@ function chooseTime(time) {
     clearInterval(recall);
     alreadyStarted = false;
     seconds.innerText = "00";
-    if(time == 25)
+    if(time == 25){
         minutes.innerText = "25";
-    else if(time == 10) 
+        currentChoose = 25;
+    }
+    else if(time == 10) {
         minutes.innerText = "10";
-    else if(time == 15)
+        currentChoose = 10;
+    }
+    else if(time == 15) {
         minutes.innerText = "15";
+        currentChoose = 15;
+    }
     const totalTime = Number.parseInt(minutes.textContent);
     totalSeconds = totalTime * 60;
-    currentChoose = 25;
     pause = false;
 }
+
 
 
     
